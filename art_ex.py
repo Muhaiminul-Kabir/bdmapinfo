@@ -143,7 +143,7 @@ def extract_art(link):
 
         # Construct the new entry as a dictionary
         new_entry = {
-            "path_data": path_data if path_data[0] else "",
+            "path_data": path_data[0] if path_data else "",
             "victims": victim_details,
             "hurt": str(hurt),
             "locations": location_list if location_list else [],
