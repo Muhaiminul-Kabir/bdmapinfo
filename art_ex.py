@@ -2,6 +2,9 @@ import re
 import json
 import os
 
+from utilities import is_probably_noun_based
+
+
 def extract_art(link):
     
 
@@ -55,6 +58,15 @@ def extract_art(link):
         #  Extract victim names and ages
         names_ages = re.findall(r'([A-Z][a-z]+\s[A-Z][a-z]+),?\s*\(?(\d{1,2})\)?', text)
         victims = [{"name": name.strip(), "age": int(age)} for name, age in names_ages]
+        
+        for name, _ in victims:
+            if is_probably_noun_based(name):
+                print("Good name")
+            else:
+                print("Invalid name")
+                return
+            
+
 
         #  Extract locations: village, upazila, etc.
         locations = re.findall(r'\b([A-Z][a-z]+(?:\s[A-Z][a-z]+)*\s(?:village|upazila|area|school|college))', text)
