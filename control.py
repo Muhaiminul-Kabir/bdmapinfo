@@ -17,7 +17,7 @@ while e>0:
 
     
     
-   # extract_link(url)
+    extract_link(url)
             
     with open('data/output.json', 'r') as file:
         data = json.load(file)  # load JSON into a Python dict/list
