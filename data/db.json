@@ -37,5 +37,24 @@
             "Rangpur"
         ],
         "link": "https://www.thedailystar.net//news/bangladesh/news/abu-sayeds-role-achieving-second-independence-unforgettable-brur-vc-3940841"
+    },
+    {
+        "path_data": [
+            "path4160",
+            "path3168"
+        ],
+        "victims": [
+            "On July(15)",
+            "On July(15)"
+        ],
+        "hurt": "2",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Dhaka",
+            "Rajshahi"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/fear-defiance-how-rajshahi-university-stood-july-16-3940876"
     }
 ]
