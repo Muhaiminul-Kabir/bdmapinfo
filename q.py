@@ -1,26 +1,74 @@
-import xml.etree.ElementTree as ET
 
-# Load the SVG file
-tree = ET.parse('assets/BD_Map_admin.svg')
-root = tree.getroot()
 
-# Define SVG namespace (often required)
-ns = {'svg': 'http://www.w3.org/2000/svg'}
+import json
+original = {
+				"text442": ["path4160","0"],
+				"text444": ["path4179","0"],
+				"text446": ["path2235","0"],
+				"text448": ["path4172","0"],
+				"text450": ["path2230","0"],
+				"text452": ["path4391","0"],
+				"text454": ["path5169","0"],
+				"text456": ["path2245","0"],
+				"text458": ["path2206","0"],
+				"text460": ["path6099","0"],
+				"text462": ["path8053","0"],
+				"text464": ["path6105","0"],
+				"text466": ["path5240","0"],
+				"text468": ["path3168","0"],
+				"text470": ["path2177","0"],
+				"text472": ["path2175","0"],
+				"text474": ["path8281","0"],
+				"text482": ["path6152","0"],
+				"text484": ["path5150","0"],
+				"text486": ["path3216","0"],
+				"text488": ["path3186","0"],
+				"text490": ["path2242","0"],
+				"text492": ["path6102","0"],
+				"text494": ["path7082","0"],
+				"text496": ["path5134","0"],
+				"text498": ["path3189","0"],
+				"text500": ["path2229","0"],
+				"text502": ["path4177","0"],
+				"text504": ["path3179","0"],
+				"text506": ["path2228","0"],
+				"text508": ["path8041","0"],
+				"text510": ["path3152","0"],
+				"text512": ["path4167","0"],
+				"text514": ["path2192","0"],
+				"text516": ["path3203","0"],
+				"text518": ["path2169","0"],
+				"text520": ["path6116","0"],
+				"text522": ["path2215","0"],
+				"text524": ["path2440","0"],
+				"text526": ["path4189","0"],
+				"text528": ["path2205","0"],
+				"text530": ["path2231","0"],
+				"text532": ["path4163","0"],
+				"text534": ["path2180","0"],
+				"text536": ["path2184","0"],
+				"text538": ["path2174","0"],
+				"text540": ["path3151","0"],
+				"text542": ["path4174","0"],
+				"text544": ["path7308","0"],
+				"text546": ["path7138","0"],
+				"text548": ["path6121","0"],
+				"text550": ["path3218","0"],
+				"text552": ["path7070","0"],
+				"text554": ["path2204","0"],
+				"text556": ["path3188","0"],
+				"text558": ["path5131","0"],
+				"text560": ["path5128","0"],
+				"text562": ["path3206","0"],
+				"text564": ["path5143","0"],
+				"text566": ["path4248","0"],
+				"text568": ["path2179","0"],
+				"text570": ["path3201","0"],
+				"text572": ["path2176","0"],
+				"text478": ["path5364","0"]
+			}
 
-# Find all <text> elements with font-size="17.8907"
-output = []
+swapped = {v[0]: [k,"0"] for k, v in original.items()}
 
-for text in root.findall('.//svg:text', ns):
-    font_size = text.attrib.get('font-size')
-    if font_size == '17.8907':
-        id = text.attrib.get('id')
-        t = text.findall()
-        if id:
-            js = {
-                'text-id' : id,
-                'name':t
-            }
-            output.append(js)
-
-print(output)
-
+with open("data/path_to_text-id.json", "w", encoding="utf-8") as f:
+    json.dump(swapped, f, indent=2)
