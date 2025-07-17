@@ -25,8 +25,8 @@ while e>0:
     for i in data:
         sub_url = i['links'][0]
         sub_url = "https://www.thedailystar.net/"+sub_url['href']
-        extract_para(sub_url)
-        extract_art(sub_url)
+        date = extract_para(sub_url)
+        extract_art(sub_url,date)
     
     
     command = "git add * && git commit -m \"CRUD\" && git push"

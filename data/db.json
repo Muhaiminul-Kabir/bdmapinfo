@@ -9,46 +9,80 @@
         "districts": [
             "Gopalganj"
         ],
-        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/attack-ncp-rally-jamaat-announces-nationwide-protest-tomorrow-3941141"
+        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/nahid-calls-probe-gopalganj-killings-demands-justice-3941696",
+        "published_time": "July 17, 2025 01:42 PM"
     },
     {
-        "path_data": "path6099",
-        "victims": ["Rahim Uddin(35)", "Salma Khatun(28)"],
-        "hurt": "2",
-        "locations": ["Gopalganj Sadar", "Courtpara"],
-        "hospitals": ["Gopalganj General Hospital"],
-        "doctors": ["Dr. Mahmuda Akter", "Dr. Hasan Al Mamun"],
-        "districts": ["Gopalganj"],
-        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/attack-ncp-rally-jamaat-announces-nationwide-protest-tomorrow-3941141"
-    },
-    {
-        "path_data": "path6099",
-        "victims": ["Jamal Hossain(42)"],
-        "hurt": "1",
-        "locations": ["Tungipara Bazar"],
-        "hospitals": ["Tungipara Upazila Health Complex"],
-        "doctors": ["Dr. Farzana Rahman"],
-        "districts": ["Gopalganj"],
-        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/attack-ncp-rally-jamaat-announces-nationwide-protest-tomorrow-3941141"
-    },
-    {
-        "path_data": "path6099",
-        "victims": ["Shahida Begum(50)", "Nur Islam(60)", "Tania Akter(17)"],
-        "hurt": "3",
-        "locations": ["Kashiani", "Radhaganj"],
-        "hospitals": ["Kashiani Health Center"],
-        "doctors": ["Dr. Mizanur Rahman", "Dr. Laila Sultana"],
-        "districts": ["Gopalganj"],
-        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/attack-ncp-rally-jamaat-announces-nationwide-protest-tomorrow-3941141"
+        "path_data": "path4160",
+        "victims": [],
+        "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Dhaka",
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//top-news/news/25-arrested-so-far-connection-gopalganj-violence-home-adviser-3941806",
+        "published_time": "July 17, 2025 04:35 PM"
     },
     {
         "path_data": "path6099",
         "victims": [],
         "hurt": "0",
-        "locations": ["Muksudpur"],
+        "locations": [
+            "Gopalganj Sadar upazila"
+        ],
         "hospitals": [],
         "doctors": [],
-        "districts": ["Gopalganj"],
-        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/attack-ncp-rally-jamaat-announces-nationwide-protest-tomorrow-3941141"
+        "districts": [
+            "Gopalganj",
+            "Khulna"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/army-used-force-self-defence-during-gopalganj-violence-ispr-3941846",
+        "published_time": "July 17, 2025 06:18 PM"
+    },
+    {
+        "path_data": "path6099",
+        "victims": [],
+        "hurt": "0",
+        "locations": [
+            "Gopalganj Sadar upazila"
+        ],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Gopalganj",
+            "Khulna"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/army-used-force-self-defence-during-gopalganj-violence-ispr-3941846",
+        "published_time": "July 17, 2025 06:18 PM"
+    },
+    {
+        "path_data": "path4160",
+        "victims": [],
+        "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Dhaka",
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//top-news/news/25-arrested-so-far-connection-gopalganj-violence-home-adviser-3941806",
+        "published_time": "July 17, 2025 04:35 PM"
+    },
+    {
+        "path_data": "path6099",
+        "victims": [],
+        "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/politics/news/nahid-calls-probe-gopalganj-killings-demands-justice-3941696",
+        "published_time": "July 17, 2025 01:42 PM"
     }
 ]

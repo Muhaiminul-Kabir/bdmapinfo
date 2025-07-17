@@ -3,10 +3,10 @@ import json
 import os
 import time
 
-from utilities import is_probably_noun_based
+from utilities import is_probably_noun_based,convert_date
 
 
-def extract_art(link):
+def extract_art(link,date):
     
 
 
@@ -155,7 +155,8 @@ def extract_art(link):
             "hospitals": hospitals if hospitals else [],
             "doctors": doctors if doctors else [],
             "districts": matched_districts if matched_districts else [],
-            "link": link
+            "link": link,
+            "published_time": convert_date(date)
         }
 
         # Step 1: Load existing entries
@@ -170,7 +171,7 @@ def extract_art(link):
         # Step 2: Check for duplicate and save if new
         if new_entry not in existing_entries:
             existing_entries.append(new_entry)
-            existing_entries.insert(0,len(existing_entries)-1)
+            existing_entries.insert(0,existing_entries[len(existing_entries)-1])
             with open(json_path, mode='w', encoding='utf-8') as file:
                 json.dump(existing_entries, file, ensure_ascii=False, indent=4)
             print("\n Data saved to 'data/output.json'")

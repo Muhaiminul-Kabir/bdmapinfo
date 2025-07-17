@@ -1,12 +1,45 @@
 [
   {
     "intervals": [
-      "1h ago"
+      "28m ago"
     ],
     "links": [
       {
-        "href": "/news/bangladesh/news/trade-rivalry-behind-sohag-murder-police-3941311",
-        "text": "Trade rivalry behind Sohag murder: police"
+        "href": "/news/bangladesh/crime-justice/news/tk-222-crore-money-laundering-case-arrest-warrant-issued-against-samrat-3941921",
+        "text": "Tk 222 crore money laundering case: Arrest warrant issued against Samrat"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "29m ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/ec-cancels-registration-96-local-polls-observers-3941916",
+        "text": "EC cancels registration of 96 local polls observers"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "32m ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/those-turning-18-polls-schedule-announcement-can-vote-3941911",
+        "text": "Those turning 18 by polls schedule announcement can vote"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "34m ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/23-pushed-back-through-panchagarh-border-3941906",
+        "text": "23 pushed back through Panchagarh border"
       }
     ]
   },
@@ -16,8 +49,68 @@
     ],
     "links": [
       {
-        "href": "/news/bangladesh/news/domestic-workers-deserve-dignity-legal-protection-3941296",
-        "text": "Domestic workers deserve dignity, legal protection"
+        "href": "/news/bangladesh/news/army-used-force-self-defence-during-gopalganj-violence-ispr-3941846",
+        "text": "Army used force in self-defence during Gopalganj violence: ISPR"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "1h ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/curfew-extended-gopalganj-indefinitely-3941836",
+        "text": "Curfew extended in Gopalganj indefinitely"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "2h ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/ncp-urges-govt-not-harass-gopalganj-residents-3941831",
+        "text": "NCP urges govt not to harass Gopalganj residents"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "3h ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/advisory-council-okays-voters-list-amendment-ordinance-2025-3941816",
+        "text": "Advisory Council okays Voters' List (Amendment) Ordinance, 2025"
+      }
+    ]
+  },
+  {
+    "intervals": [],
+    "links": [
+      {
+        "href": "/news/bangladesh/crime-justice/news/4-held-over-rape-14-yr-old-girl-khagrachhari-3941811",
+        "text": "4 held over rape of 14-yr-old girl in Khagrachhari"
+      }
+    ]
+  },
+  {
+    "intervals": [],
+    "links": [
+      {
+        "href": "/top-news/news/25-arrested-so-far-connection-gopalganj-violence-home-adviser-3941806",
+        "text": "25 arrested so far in connection with Gopalganj violence: home adviser"
+      }
+    ]
+  },
+  {
+    "intervals": [],
+    "links": [
+      {
+        "href": "/news/bangladesh/politics/news/nahid-calls-probe-gopalganj-killings-demands-justice-3941696",
+        "text": "Nahid calls for probe into Gopalganj killings, demands justice"
       }
     ]
   }

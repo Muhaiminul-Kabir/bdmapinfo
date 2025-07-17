@@ -1,4 +1,6 @@
 import requests
+import datetime
+from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 
 
@@ -13,7 +15,14 @@ def extract_para(url):
     response = requests.get(url, headers=headers)
 
     soup = BeautifulSoup(response.text, 'html.parser')
-
+    
+    meta_tag = soup.find('meta', attrs={'property': 'article:published_time'})
+    
+    try:
+        published_time = meta_tag.get('content')
+    except:
+        published_time = datetime.now(timezone(timedelta(hours=6))).isoformat()
+    
     paragraphs = soup.find_all('p')
 
 
@@ -30,3 +39,5 @@ def extract_para(url):
         for p in filtered_p:
             text = p.get_text(strip=True)
             file.write(text + "\n")    
+    
+    return published_time

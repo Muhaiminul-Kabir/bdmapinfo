@@ -16,6 +16,14 @@ def  extract_link(url):
     response = requests.get(url, headers=headers)
 
     soup = BeautifulSoup(response.text, "html.parser")
+    
+    
+    
+    
+    
+    
+    
+    
     card_contents = soup.find_all(class_='card-content pt-20 pb-20 pr-20')
 
     result = []
@@ -41,8 +49,7 @@ def  extract_link(url):
 
 
     for item in result:
-        if "1h ago" in item.get("intervals", []):
-            data.append(item)
+        data.append(item)
 
 
 

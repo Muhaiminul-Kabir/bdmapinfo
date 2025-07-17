@@ -1,4 +1,15 @@
 import csv
+from datetime import datetime,timezone
+
+def convert_date(published_time):
+
+    # Parse ISO8601 with timezone info
+    dt = datetime.fromisoformat(published_time)
+
+    # Convert to readable format (in UTC)
+    readable = dt.strftime("%B %d, %Y %I:%M %p")
+
+    return readable
 
 
 def csvtoset():
