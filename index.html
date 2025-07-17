@@ -2,12 +2,25 @@
 
 
 <head>
-    <style>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet"><style>
         .heatmap > text{
-                        					font-family: Tahoma;, sans-serif;
+                        					 
+                        				    font-size: 20px;
+                        				    fill: black; 
+                        				    dominant-baseline: middle;
+                        				    text-anchor: middle;
+                        				
+                        				}
+										#counter{
+                        					font-family: "Noto Sans Bengali", sans-serif;
+											font-style: normal;
+											   
                         				    font-size: 20px;
                         				    fill: black;
-                        				    font-weight: bold;
+                        				    
                         				    dominant-baseline: middle;
                         				    text-anchor: middle;
                         				
@@ -101,8 +114,18 @@
 
     <div id="card">
         <div class="close" onclick="document.getElementById('card').style.display='none'">&times;</div>
-        <div id="cardContent">Loading...</div>
-    </div>
+        <div align="center" style="display:flex:justify-content: end">
+			<div id="cardContent">Loading...</div>
+			<svg  width="200" height="200" style="">
+			  <g>
+				<circle id="count" cx="100" cy="80" r="70" fill="" stroke="black" stroke-width="2" />
+				<text text-anchor="middle" id="counter" x="50%" y="40%"></text>
+			  </g>
+			</svg>
+			
+		</div>
+		<div id="lbl" align="center" style="font-size:20">আহত/নিহত - দের তালিকা</div>
+	</div>
     <svg version="1.1" id="svg1895" x="0px" y="0px" width="1530.748px" height="2138px" viewBox="0 0 1530.748 2138" preserveAspectRatio="xMidYMid meet" enable-background="new 0 0 1530.748 2138" xml:space="preserve" sodipodi:docname="BD_Map_admin.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
         <defs id="defs636" />
@@ -794,7 +817,12 @@
         	  "path5169": { "en": "Bhola", "bn": "ভোলা" }
         	}
         
-        
+		  function toBanglaNumber(num) {
+			  const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+			  return num.toString().split('').map(d => {
+				return /\d/.test(d) ? banglaDigits[d] : d;
+			  }).join('');
+		  }
           
           const label = document.getElementById('label');
         
@@ -812,18 +840,35 @@
           });
           
           
-          
+          let gpath = null;
           const card = document.getElementById('card');
           const content = document.getElementById('cardContent');
-        
+          const counter = document.getElementById("counter");
           document.querySelectorAll('svg path').forEach(path => {
             path.addEventListener('click', (e) => {
               const id = path.id;
               content.textContent = `${dist[id].bn}`;
-        
+              content.style.fontFamily= "Noto Serif Bengali, sans-serif";
+			  content.style.fontStyle=  "normal"; 
+			  content.style.fontSize=  45;
               card.style.left = (e.pageX + 15) + 'px';
               card.style.top = (e.pageY + 15) + 'px';
               card.style.display = 'block';
+			  let count = (parseInt(gpath[id][1]));
+			  if(count <= 10){
+				document.getElementById("count").setAttribute('fill', `hsl(${(150-count*15)}, 80%, 50%)`);
+				
+			  }else{
+				document.getElementById("count").setAttribute('fill', `hsl(0, 80%, 50%)`);
+				
+			  }
+			  
+			  counter.textContent = toBanglaNumber(count);
+			  counter.style.fontFamily= "Noto Serif Bengali, sans-serif";
+			  counter.style.fontStyle=  "normal"; 
+			  counter.style.fontSize=  45;
+			  
+			  
             });
           });
         
@@ -891,8 +936,10 @@
 					return response.json();
 				  })
 				  .then(data => {
+				    gpath = data;
 					Object.entries(data).forEach(([key, value]) => {
 					  uiGen(value);
+					  
 					});
 					
 				  })
@@ -923,17 +970,22 @@
 					  if(i != 0){
 						  document.getElementById(`circle${id}`).setAttribute('r', `${(i)*7}`);
 						  document.getElementById(`circle${id}`).setAttribute('fill', `hsl(${(150-i*15)}, 80%, 50%)`);
+						 
 					  }
 				  }else{
 					  document.getElementById(`circle${id}`).setAttribute('r', `70`);
 					  document.getElementById(`circle${id}`).setAttribute('fill', `hsl(0, 80%, 50%)`);
+					  
 				  }
 				   
 				  if(i!= 0){ 
-					document.getElementById(`text${id}`).textContent = i;
+					document.getElementById(`text${id}`).textContent = toBanglaNumber(i);
+					 
+					  
 				  }
 				
-			
+					  document.getElementById(`text${id}`).fontFamily= "Noto Serif Bengali, sans-serif";
+					  document.getElementById(`text${id}`).style.fontStyle=  "normal"; 
 			
 			}
 			

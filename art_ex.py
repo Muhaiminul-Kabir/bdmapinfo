@@ -170,6 +170,7 @@ def extract_art(link):
         # Step 2: Check for duplicate and save if new
         if new_entry not in existing_entries:
             existing_entries.append(new_entry)
+            existing_entries.insert(0,len(existing_entries)-1)
             with open(json_path, mode='w', encoding='utf-8') as file:
                 json.dump(existing_entries, file, ensure_ascii=False, indent=4)
             print("\n Data saved to 'data/output.json'")
