@@ -42,7 +42,7 @@ while e>0:
     
     
     e = e-1
-    total = 60
+    total = 45*60
     for remaining in range(total, 0, -1):
         sys.stdout.write(f" \rProcess resumes untill : {remaining}s left...")
         sys.stdout.flush()
