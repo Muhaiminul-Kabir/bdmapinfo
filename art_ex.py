@@ -171,12 +171,13 @@ def extract_art(link,date):
         # Step 2: Check for duplicate and save if new
         if new_entry not in existing_entries:
             existing_entries.append(new_entry)
-            existing_entries.insert(0,existing_entries[len(existing_entries)-1])
+            lat_ent = []
+            lat_ent.insert(0,existing_entries[len(existing_entries)-1])
             with open(json_path, mode='w', encoding='utf-8') as file:
-                json.dump(existing_entries, file, ensure_ascii=False, indent=4)
+                json.dump(lat_ent, file, ensure_ascii=False, indent=4)
             print("\n Data saved to 'data/output.json'")
             print(str(int(path_total[path_data[0]][1]) + 1))
-            path_total[path_data[0]][1] = str(int(path_total[path_data[0]][1]) + hurt)
+            path_total[path_data[0]][1] = str(int(path_total[path_data[0]][1]) + 1)
             with open('data/path_to_text-id.json', mode='w', encoding='utf-8') as file:
                 json.dump(path_total, file, ensure_ascii=False, indent=4)
             
