@@ -175,7 +175,7 @@ def extract_art(link,date):
             with open(json_path, mode='w', encoding='utf-8') as file:
                 json.dump(existing_entries, file, ensure_ascii=False, indent=4)
             print("\n Data saved to 'data/output.json'")
-            print(str(int(path_total[path_data[0]][1]) + hurt))
+            print(str(int(path_total[path_data[0]][1]) + 1))
             path_total[path_data[0]][1] = str(int(path_total[path_data[0]][1]) + hurt)
             with open('data/path_to_text-id.json', mode='w', encoding='utf-8') as file:
                 json.dump(path_total, file, ensure_ascii=False, indent=4)
