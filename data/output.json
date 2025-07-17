@@ -1,7 +1,18 @@
 [
   {
     "intervals": [
-      "28m ago"
+      "7m ago"
+    ],
+    "links": [
+      {
+        "href": "/news/bangladesh/news/9-family-along-4-others-given-life-jail-kishoreganj-murder-3941931",
+        "text": "9 of a family, along with 4 others, given life in jail for Kishoreganj murder"
+      }
+    ]
+  },
+  {
+    "intervals": [
+      "35m ago"
     ],
     "links": [
       {
@@ -12,7 +23,7 @@
   },
   {
     "intervals": [
-      "29m ago"
+      "36m ago"
     ],
     "links": [
       {
@@ -23,7 +34,7 @@
   },
   {
     "intervals": [
-      "32m ago"
+      "39m ago"
     ],
     "links": [
       {
@@ -34,7 +45,7 @@
   },
   {
     "intervals": [
-      "34m ago"
+      "41m ago"
     ],
     "links": [
       {
@@ -77,9 +88,7 @@
     ]
   },
   {
-    "intervals": [
-      "3h ago"
-    ],
+    "intervals": [],
     "links": [
       {
         "href": "/news/bangladesh/news/advisory-council-okays-voters-list-amendment-ordinance-2025-3941816",
@@ -100,17 +109,8 @@
     "intervals": [],
     "links": [
       {
-        "href": "/top-news/news/25-arrested-so-far-connection-gopalganj-violence-home-adviser-3941806",
-        "text": "25 arrested so far in connection with Gopalganj violence: home adviser"
-      }
-    ]
-  },
-  {
-    "intervals": [],
-    "links": [
-      {
-        "href": "/news/bangladesh/politics/news/nahid-calls-probe-gopalganj-killings-demands-justice-3941696",
-        "text": "Nahid calls for probe into Gopalganj killings, demands justice"
+        "href": "/news/bangladesh/crime-justice/news/govt-forms-body-probe-gopalganj-clashes-3941751",
+        "text": "Govt forms body to probe Gopalganj clashes"
       }
     ]
   }
