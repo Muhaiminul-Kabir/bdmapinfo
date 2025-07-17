@@ -3,6 +3,19 @@
         "path_data": "path6099",
         "victims": [],
         "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/crime-justice/news/govt-forms-body-probe-gopalganj-clashes-3941751",
+        "published_time": "July 17, 2025 02:47 PM"
+    },
+    {
+        "path_data": "path6099",
+        "victims": [],
+        "hurt": "0",
         "locations": [
             "Gopalganj Sadar upazila"
         ],
@@ -30,5 +43,18 @@
         ],
         "link": "https://www.thedailystar.net//news/bangladesh/news/army-used-force-self-defence-during-gopalganj-violence-ispr-3941846",
         "published_time": "July 17, 2025 06:18 PM"
+    },
+    {
+        "path_data": "path6099",
+        "victims": [],
+        "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/crime-justice/news/govt-forms-body-probe-gopalganj-clashes-3941751",
+        "published_time": "July 17, 2025 02:47 PM"
     }
 ]
