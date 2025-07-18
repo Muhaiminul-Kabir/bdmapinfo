@@ -4,15 +4,16 @@
         "victims": [],
         "hurt": "0",
         "locations": [
-            "Gopalganj Sadar upazila"
+            "Chourangi area"
         ],
-        "hospitals": [],
+        "hospitals": [
+            "Sadar Hospital"
+        ],
         "doctors": [],
         "districts": [
-            "Gopalganj",
-            "Khulna"
+            "Gopalganj"
         ],
-        "link": "https://www.thedailystar.net//news/bangladesh/news/army-used-force-self-defence-during-gopalganj-violence-ispr-3941846",
-        "published_time": "July 17, 2025 06:18 PM"
+        "link": "https://www.thedailystar.net//news/bangladesh/news/3-hour-curfew-relaxation-tension-prevails-gopalganj-3942461",
+        "published_time": "July 18, 2025 01:39 PM"
     }
 ]

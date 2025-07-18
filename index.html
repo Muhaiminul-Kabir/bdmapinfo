@@ -1124,7 +1124,7 @@
 						}
 						
 						
-						html += `<div class="incident-card">
+						html += `<br><div class="incident-card">
 								<div class="incident-title">Incident in ${locations}</div>
 								<div class="incident-text"><strong>Hurt:</strong> ${hurt}</div>
 								<div class="incident-text"><strong>Hospitals:</strong> ${hospitals}</div>
@@ -1135,7 +1135,7 @@
 								`</div>
 								<div class="incident-text"><strong>Time:</strong> ${item.published_time}</div>
 								<a class="incident-link" href="${item.link}">View Article</a>
-								</div>
+								</div><br>
 								`
 						document.getElementById("listContent").innerHTML += html;
 						html = "";
