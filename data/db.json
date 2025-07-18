@@ -1,22 +1,5 @@
 [
     {
-        "path_data": "path6099",
-        "victims": [],
-        "hurt": "0",
-        "locations": [
-            "Chourangi area"
-        ],
-        "hospitals": [
-            "Sadar Hospital"
-        ],
-        "doctors": [],
-        "districts": [
-            "Gopalganj"
-        ],
-        "link": "https://www.thedailystar.net//news/bangladesh/news/3-hour-curfew-relaxation-tension-prevails-gopalganj-3942461",
-        "published_time": "July 18, 2025 01:39 PM"
-    },
-    {
         "path_data": "path4391",
         "victims": [],
         "hurt": "0",
@@ -47,5 +30,22 @@
         ],
         "link": "https://www.thedailystar.net//news/bangladesh/news/least-90-arrested-over-gopalganj-clashes-3942471",
         "published_time": "July 18, 2025 01:56 PM"
+    },
+    {
+        "path_data": "path6099",
+        "victims": [],
+        "hurt": "0",
+        "locations": [
+            "Chourangi area"
+        ],
+        "hospitals": [
+            "Sadar Hospital"
+        ],
+        "doctors": [],
+        "districts": [
+            "Gopalganj"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/3-hour-curfew-relaxation-tension-prevails-gopalganj-3942461",
+        "published_time": "July 18, 2025 01:39 PM"
     }
 ]
