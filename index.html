@@ -914,12 +914,14 @@
           
           
           let gpath = null;
+		  let pith = null;
           const card = document.getElementById('card');
           const content = document.getElementById('cardContent');
           const counter = document.getElementById("counter");
           document.querySelectorAll('svg path').forEach(path => {
             path.addEventListener('click', (e) => {
               const id = path.id;
+			  pith = path.id;
               content.textContent = `${dist[id].bn}`;
               content.style.fontFamily= "Noto Serif Bengali, sans-serif";
 			  content.style.fontStyle=  "normal"; 
@@ -949,6 +951,9 @@
           document.addEventListener('click', (e) => {
             if (!card.contains(e.target) && !e.target.closest('svg')) {
               card.style.display = 'none';
+			  document.getElementById("listContent").style.display = "none";
+						document.getElementById("lblNone").style.display = "block";
+						document.getElementById(`in${pith}`).style.display = "none";
             }
           });
           
@@ -1095,18 +1100,19 @@
 				// Display JSON in <pre> block
 				data.forEach(item => {
 					
-					console.log(item.path_data);
+					
 					if(item.path_data === path_id){
+					    console.log(path_id);
 						document.getElementById("listContent").style.display = "block";
 						document.getElementById("lblNone").style.display = "none";
-					
+						
 						let locations = item.locations;
 						let hospitals = item.hospitals;
 						let doctors = item.doctors;
 						let link = item.link;
 						let hurt = item.hurt;
 						let victims = item.victims;
-						
+						 console.log(locations);
 						if(locations.length === 0){
 							locations = "Unknown place";
 						}
@@ -1124,7 +1130,7 @@
 						}
 						
 						
-						html += `<br><div class="incident-card">
+						html += `<br><div id="in${path_id}" class="incident-card">
 								<div class="incident-title">Incident in ${locations}</div>
 								<div class="incident-text"><strong>Hurt:</strong> ${hurt}</div>
 								<div class="incident-text"><strong>Hospitals:</strong> ${hospitals}</div>
@@ -1138,6 +1144,7 @@
 								</div><br>
 								`
 						document.getElementById("listContent").innerHTML += html;
+						document.getElementById(`in${path_id}`).style.display = "block";
 						html = "";
 						
 						
