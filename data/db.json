@@ -15,5 +15,37 @@
         ],
         "link": "https://www.thedailystar.net//news/bangladesh/news/3-hour-curfew-relaxation-tension-prevails-gopalganj-3942461",
         "published_time": "July 18, 2025 01:39 PM"
+    },
+    {
+        "path_data": "path4391",
+        "victims": [],
+        "hurt": "0",
+        "locations": [],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Khagrachari",
+            "Rangamati"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/protest-rangamati-over-rape-14-year-old-girl-3942501",
+        "published_time": "July 18, 2025 03:42 PM"
+    },
+    {
+        "path_data": "path4160",
+        "victims": [],
+        "hurt": "0",
+        "locations": [
+            "Muksudpur upazila",
+            "Kashiani upazila"
+        ],
+        "hospitals": [],
+        "doctors": [],
+        "districts": [
+            "Dhaka",
+            "Gopalganj",
+            "Khulna"
+        ],
+        "link": "https://www.thedailystar.net//news/bangladesh/news/least-90-arrested-over-gopalganj-clashes-3942471",
+        "published_time": "July 18, 2025 01:56 PM"
     }
 ]
